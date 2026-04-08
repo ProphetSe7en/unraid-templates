@@ -2,13 +2,13 @@
 <Container version="2">
   <Name>ContainerNetwork-AutoFix</Name>
   <Repository>ghcr.io/prophetse7en/containernetwork-autofix:latest</Repository>
-  <Registry>https://github.com/ProphetSe7en/containernetwork-autofix/pkgs/container/containernetwork-autofix</Registry>
+  <Registry>https://github.com/prophetse7en/containernetwork-autofix/pkgs/container/containernetwork-autofix</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/ProphetSe7en/containernetwork-autofix/issues</Support>
-  <Project>https://github.com/ProphetSe7en/containernetwork-autofix</Project>
+  <Support>https://github.com/prophetse7en/containernetwork-autofix/issues</Support>
+  <Project>https://github.com/prophetse7en/containernetwork-autofix</Project>
   <Overview>ContainerNetwork AutoFix (CNAF) - Automatically recreates Docker containers that depend on a master container's network when the master container restarts. Perfect for containers routing through VPN containers like GluetunVPN.&#xD;
 &#xD;
 This is the ProphetSe7en fork of buxxdev/containernetwork-autofix with the Unraid template parser rewritten using xmlstarlet. The rewrite fixes three bugs in the upstream sed-based parser:&#xD;
@@ -28,8 +28,8 @@ Features:&#xD;
 - Zero manual configuration needed</Overview>
   <Category>Tools: Network:VPN Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/ProphetSe7en/containernetwork-autofix/main/unraid-template.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/ProphetSe7en/containernetwork-autofix/main/icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/prophetse7en/containernetwork-autofix/main/unraid-template.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/prophetse7en/containernetwork-autofix/main/icon.png</Icon>
   <ExtraParams>--restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v /boot/config/plugins/dockerMan/templates-user:/templates:ro</ExtraParams>
   <PostArgs/>
   <CPUset/>
