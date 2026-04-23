@@ -14,7 +14,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://discordapp.com/channels/492590071455940612/1486391669384417300</Support>
+  <Support>https://discordapp.com/channels/492590071455940612/1495685561552207913</Support>
   <Project>https://github.com/prophetse7en/clonarr</Project>
   <Overview>TRaSH Guides sync tool for Radarr and Sonarr with a built-in web UI. Browse, customize, and sync Custom Formats, Quality Profiles, Scores, and Quality Sizes from TRaSH Guides to your Radarr and Sonarr instances. Features profile builder, scoring sandbox, auto-sync, and import/export support.</Overview>
   <Category>MediaApp:Other</Category>
@@ -24,6 +24,8 @@
   <Date>2026-04-20</Date>
   <Changes>
 ### 2026-04-20
+- v2.1.0: **Architecture refactor** (backend reorganized into `internal/api/`, `internal/core/`, `internal/arr/`, `internal/auth/`, `internal/netsec/`, `internal/utils/` — no user-facing behavior change, credit @ColeSpringer). Panic recovery via `utils.SafeGo` on every goroutine.
+- v2.0.8: **Notification Agents** — Discord, Gotify, and Pushover are now independent agents in an Instances-style list. Multi-agent per type (two Discord channels, etc.), optional Name field, per-agent test button. Auto-migration from v2.0.x flat config on first startup. Credit @xFlawless11x via PR #15. Plus T70 panic-recovery wrapper on the session-persistence goroutine.
 - v2.0.7: Fix — Golden Rule and other exclusive CF groups can now be disabled at the group level (matches behavior of HDR Formats / Optional Movie Versions). Previously the group toggle was hidden for exclusive pick-one groups, which was stricter than TRaSH's own schema.
 ### 2026-04-19
 - v2.0.6: **Breaking change** — authentication now required, first boot redirects to /setup. Login + password (bcrypt), API key for Homepage/scripts, CSRF, SSRF guards on Discord/Pushover, security headers, env-var lock for Trusted Networks/Proxies. Cookie names renamed clonarr_*. Full changelog in GitHub repo.
