@@ -23,6 +23,8 @@
   <Icon>https://raw.githubusercontent.com/prophetse7en/clonarr/main/ui/static/icons/clonarr.png</Icon>
   <Date>2026-04-29</Date>
   <Changes>
+### 2026-04-29
+- v2.3.0: **Notifications rebuilt under the hood.** Existing Discord/Gotify/Pushover setups keep working — nothing to reconfigure. Better error messages when a test fails, Gotify tokens move from URL to request header, sensitive fields stay masked in more places. Sets up NTFY and Apprise to land in v2.4 next. Big credit to @ColeSpringer (PR #32) for the entire refactor.
 ### 2026-04-28
 - v2.2.10: **Bug fix — Recyclarr-imported profiles now show their CFs in the Profile Builder.** Previously the Builder showed 0 CFs and clicking Save Changes wiped them from disk. Existing imports are restored automatically when re-opened.
 - v2.2.9: **Bug fix — Edit a sync rule, Dry Run / Cancel, then Save &amp; Sync again now stays on the same Arr profile** (was flipping to "Create new" on the second click).
