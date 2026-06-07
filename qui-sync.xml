@@ -16,7 +16,7 @@
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:6070]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ProphetSe7en/unraid-templates/main/qui-sync.xml</TemplateURL>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/ProphetSe7en/qui-sync/main/icon.png</Icon>
   <Date>2026-06-07</Date>
   <Changes>
 ### 2026-06-07
