@@ -28,7 +28,7 @@ Per-release notes: https://github.com/ProphetSe7en/qui-sync/blob/main/CHANGELOG.
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Requires>A running Qui instance. Everything is configured from the web UI, no manual file editing needed.</Requires>
+  <Requires>A running [Qui](https://github.com/autobrr/qui) instance with an API key. You enter the Qui URL and API key in Settings after first run. Optional, only for Publish or Subscribe over a remote git repo: a GitHub repo URL.</Requires>
   <Config Name="WebUI" Target="6070" Default="6070" Mode="tcp" Description="Web UI port" Type="Port" Display="always" Required="true" Mask="false">6070</Config>
   <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/qui-sync" Mode="rw" Description="Config and API key storage. Auto-created on first run." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/qui-sync</Config>
   <Config Name="Data Path" Target="/data" Default="/mnt/user/appdata/qui-sync/data" Mode="rw" Description="Share-repo and sync clones. Exported rules, backups, and git state live here." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/qui-sync/data</Config>
