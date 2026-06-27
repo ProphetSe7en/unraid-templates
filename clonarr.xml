@@ -9,7 +9,7 @@
   </Branch>
   <Branch>
     <Tag>dev</Tag>
-    <TagDescription>Development builds — may contain bugs or breaking changes</TagDescription>
+    <TagDescription>Development builds - may contain bugs or breaking changes</TagDescription>
   </Branch>
   <Network>bridge</Network>
   <Shell>sh</Shell>
@@ -21,15 +21,11 @@
   <WebUI>http://[IP]:[PORT:6060]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/prophetse7en/unraid-templates/main/clonarr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/prophetse7en/clonarr/main/ui/static/icons/clonarr.png</Icon>
-  <Date>2026-06-07</Date>
+  <Date>2026-06-24</Date>
+  <ReadMe>https://raw.githubusercontent.com/prophetse7en/clonarr/main/README.md</ReadMe>
   <Changes>
-### 2026-06-07
-- v3.2.0: CF descriptions move inline next to the name on Profile Editor and Profile Overview, matching the Custom Formats Browse layout. Hide / Show toggle on the tab bar collapses back to compact view. Clicking a section label (Audio, HDR Formats, Streaming Services, etc.) in the sidebar now renders every group under it at once, mirroring how Custom Formats Browse parent click already worked. The customizations counter finally sees CFs excluded via group-off toggle, so a rule that disables a default-on group reads "18 customizations" in the header (matching the Sync Rules pill) instead of "0", and the Diffs view shows a Re-enable row for the disabled group. Plus a stack of TRaSH description rendering fixes: bullet lists wrap into real lists, "!!! note" admonitions and image markup no longer leak as literal text, backticks vanish. CFs like ATMOS (undefined), IMAX Enhanced, German DL, and Special Edition all render cleanly now.
-
-### 2026-06-06
-- v3.1.0: Custom Formats "In use" sub-tab catalogues every CF on each Arr instance with Managed and Unmanaged views, per-CF drift detection, and one-click adopt. The "+ Add to Arr" button can now target a sync rule profile, not just the instance. Sortable In use columns. Sticky toolbars on Browse and In use. Sandbox export per-section toggles and Hide failed filter. Plus the v3.0.0 bug fixes that landed during soak.
-
-For full version history, see CHANGELOG.md on GitHub.
+For release notes and full version history, see the changelog on GitHub:
+https://github.com/prophetse7en/clonarr/blob/main/CHANGELOG.md
   </Changes>
   <ExtraParams/>
   <PostArgs/>
